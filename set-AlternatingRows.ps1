@@ -1,6 +1,5 @@
 ﻿Function Set-AlternatingRows {
-	
-<#
+	<#
 	.SYNOPSIS
 		Simple function to alternate the row colors in an HTML table
 	.DESCRIPTION
