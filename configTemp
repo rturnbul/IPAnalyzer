@@ -1,0 +1,18 @@
+[core]
+	symlinks = false
+	autocrlf = true
+	fscache = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
+[pack]
+[help]
+	format = html
+[http]
+	sslCAInfo = C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+[diff "astextplain"]
+	textconv = astextplain
+[rebase]
+	autosquash = true
