@@ -1,0 +1,64 @@
+Slide
+
+Welcome to IP Analyzer.
+IP Analyzer is designed to assist analysts faced with IP logs that have been provided to them as a result of a production order.Welcome to teh IP Analyzer investigation tool. can save the analyst hours of effort.
+
+
+
+
+Slide
+A production order can result in one or more IP log files.
+Each log file may contain dozens of pages and each page may contain numerous records showing communications with other IPs.
+The effort to extract and analyze all of these transactions requires significant investigative resources.
+
+Slide
+It is manually intensive and requires sseveral steps to manipulate the data into the desired format.
+As a result, the process lends itself to being very error prone.
+Contributing to this challenge is the fact that many service providers, such as Facebook and Instagram, will provide logs in PDF format.
+
+Slide
+PDF documents are by their nature, difficult to analyze.
+This format does not lend itself well to allowing the raw data to be extracted or transformed.
+It can handle both ip version 4 and ip version 6 addresses.
+
+
+Slide
+Just click thes desktop icon to start the application.
+If you have the appropriate access rights, you will be given the opportunity to choose the files of interest to you.
+
+
+Slide
+Simply choose one or more PDF log files for the case that you are investigating.
+IP Analyzer will parse each of the files that you choose.
+
+Slide
+It will then build a summary table for each vanity name and the number of times there were communications with another IP.
+For each new IP that is encountered in the log files, an internet search is conducted to get more information about that IP.
+
+Slide
+The desired data is downloaded and then stored in a central file with all other IP information, from all other production orders.
+This file can be easily accessed at any time by the user and exported for use with other applications.
+Subsequent IP searches check the local IP database before retrieving data from the internet.
+
+Slide
+Once all of the data has been compiled, an email is sent to the user.
+If the user is on the TPS network, it will be sent to their TPS address.
+Otherwise, the user will be given the opportunity to choose the email where the results can be forwarded.
+
+Slide
+The example shows an IP Analysis email that was sent to the  user's Gmail account.
+
+Slide
+The email will contain a summary table for each vanity name that was being analyzed.
+It will also contain a geographical map showing the location of each of the IP addresses that were found and a table with additional information.
+
+Slide 
+an Excel spreadsheet will be included that contains the raw data and a number of Pivot tables and Pivot charts that summarize the IP activity.
+
+This slide shows the results for one of the chosen log files.
+
+IP Analyzer can easily be modified to enhance its capabilities to account for other log types. 
+To enhance corrobration and data sharing, IP addresses can be stored in a database, used to populate a SharePoint website, or populate an analyst's notebook such as OneNote.
+ 
+
+
