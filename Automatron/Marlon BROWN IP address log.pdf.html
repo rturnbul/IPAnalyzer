@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>IP map for Marlon BROWN</title>
+    <h3>IP Map for Marlon BROWN  --- IP address: 199.119.232.214</h3>
+    <hr>
+    <style>
+      html, body {
+        margin: 0px;
+        padding: 0px;
+        background-color:lightblue
+     }
+     h3 {
+    text-indent: 500px;
+    }
+      #map-canvas {
+        height: 900px;
+        width: 1350px;
+        margin: 0px;
+        padding: 0px
+      }
+      td {
+        vertical-align: top;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var markers = [
+    ['666','199.119.232.214',43.7,-79.7],
+    ['40','204.83.94.145',52.1404,-106.608],
+    ['22','99.228.105.22',43.6665,-79.8054],
+    ['4','2607:fb90:227a:e923:1dc5:fdab:88e0:50b6',33.6695,-117.8231],
+    ['4','70.54.122.220',43.7786,-79.445],
+    ['4','2001:56a:f025:5f00:7c02:22e7:1db1:62ee',53.4567,-113.5801],
+    ['3','50.101.201.211',46.5,-80.9667],
+    ['2','45.72.130.12',43.6889,-79.4507],
+    ['2','70.55.34.226',43.8001,-79.4829],
+    ['2','66.185.207.202',46.5,-80.9667],
+    ['2','2001:56a:f0da:6600:4ce3:2981:5dd:9192',53.4593,-113.4145],
+    ['2','2001:56a:f025:5f00:9d81:e387:3f29:b521',53.4567,-113.5801],
+    ['2','2607:fea8:5060:7c:1163:ddd6:9592:74fa',43.7673,-79.4111],
+    ['2','24.65.39.94',53.4914,-113.4802],
+    ['2','2607:fea8:c60:84a:f4e3:2e40:26d:6c8d',43.6431,-79.7709],
+    ['2','2607:fea8:5060:7c:88ee:5932:ba9a:2a1a',43.7673,-79.4111],
+    ['1','2607:fea8:c60:84a:6:682:2ccf:820b',43.6431,-79.7709],
+    ['1','70.48.104.51',43.6898,-79.5582],
+    ['1','99.236.8.86',43.6667,-79.4167],
+    ['1','2607:fea8:c60:84a:4144:aa8f:3c8e:edbf',43.6431,-79.7709],
+    ['1','2607:fea8:2360:7c3:8868:90f8:f6a8:ddef',43.739,-79.4692],
+    ['1','66.199.36.250',43.6667,-79.4167],
+    ['1','45.72.130.166',43.6889,-79.4507]
+  ];
+
+  var bounds = new google.maps.LatLngBounds();
+  var mapOptions = {
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  
+  for( i = 0; i < markers.length; i++ ) {
+    var position = new google.maps.LatLng(markers[i][2], markers[i][3]);
+    bounds.extend(position);
+    var image = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + (i + 1) + '|FF0000|000000';
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      title: markers[i][0] + '\n' + markers[i][1],
+      icon: image
+    });
+  }
+
+  if (markers.length > 1) {
+    map.fitBounds(bounds);
+  }
+  else {
+    map.setCenter(new google.maps.LatLng(markers[0][1],markers[0][2]));
+    map.setZoom(7);
+  
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <table>
+      <td id="map-canvas"></td>
+     <td><b><ol start="0"><li><p>199.119.232.214<br>Qty: 666<br>Lat: 43.7<br>Lon: -79.7</p></li><li><p>204.83.94.145<br>Qty: 40<br>Lat: 52.1404<br>Lon: -106.608</p></li><li><p>99.228.105.22<br>Qty: 22<br>Lat: 43.6665<br>Lon: -79.8054</p></li><li><p>2607:fb90:227a:e923:1dc5:fdab:88e0:50b6<br>Qty: 4<br>Lat: 33.6695<br>Lon: -117.8231</p></li><li><p>70.54.122.220<br>Qty: 4<br>Lat: 43.7786<br>Lon: -79.445</p></li><li><p>2001:56a:f025:5f00:7c02:22e7:1db1:62ee<br>Qty: 4<br>Lat: 53.4567<br>Lon: -113.5801</p></li><li><p>50.101.201.211<br>Qty: 3<br>Lat: 46.5<br>Lon: -80.9667</p></li><li><p>45.72.130.12<br>Qty: 2<br>Lat: 43.6889<br>Lon: -79.4507</p></li><li><p>70.55.34.226<br>Qty: 2<br>Lat: 43.8001<br>Lon: -79.4829</p></li><li><p>66.185.207.202<br>Qty: 2<br>Lat: 46.5<br>Lon: -80.9667</p></li><li><p>2001:56a:f0da:6600:4ce3:2981:5dd:9192<br>Qty: 2<br>Lat: 53.4593<br>Lon: -113.4145</p></li><li><p>2001:56a:f025:5f00:9d81:e387:3f29:b521<br>Qty: 2<br>Lat: 53.4567<br>Lon: -113.5801</p></li><li><p>2607:fea8:5060:7c:1163:ddd6:9592:74fa<br>Qty: 2<br>Lat: 43.7673<br>Lon: -79.4111</p></li><li><p>24.65.39.94<br>Qty: 2<br>Lat: 53.4914<br>Lon: -113.4802</p></li><li><p>2607:fea8:c60:84a:f4e3:2e40:26d:6c8d<br>Qty: 2<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>2607:fea8:5060:7c:88ee:5932:ba9a:2a1a<br>Qty: 2<br>Lat: 43.7673<br>Lon: -79.4111</p></li><li><p>2607:fea8:c60:84a:6:682:2ccf:820b<br>Qty: 1<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>70.48.104.51<br>Qty: 1<br>Lat: 43.6898<br>Lon: -79.5582</p></li><li><p>99.236.8.86<br>Qty: 1<br>Lat: 43.6667<br>Lon: -79.4167</p></li><li><p>2607:fea8:c60:84a:4144:aa8f:3c8e:edbf<br>Qty: 1<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>2607:fea8:2360:7c3:8868:90f8:f6a8:ddef<br>Qty: 1<br>Lat: 43.739<br>Lon: -79.4692</p></li><li><p>66.199.36.250<br>Qty: 1<br>Lat: 43.6667<br>Lon: -79.4167</p></li><li><p>45.72.130.166<br>Qty: 1<br>Lat: 43.6889<br>Lon: -79.4507</p></li></ol></b></td>
+    </table>
+    </body>
+</html>

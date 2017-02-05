@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>IP map for Kay JONES</title>
+    <h3>IP Map for Kay JONES  --- IP address: 76.66.164.172</h3>
+    <hr>
+    <style>
+      html, body {
+        margin: 0px;
+        padding: 0px;
+        background-color:lightblue
+     }
+     h3 {
+    text-indent: 500px;
+    }
+      #map-canvas {
+        height: 900px;
+        width: 1350px;
+        margin: 0px;
+        padding: 0px
+      }
+      td {
+        vertical-align: top;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var markers = [
+    ['666','76.66.164.172',43.7,-79.7],
+    ['21','70.55.34.226',43.8001,-79.4829],
+    ['15','70.54.122.220',43.7786,-79.445],
+    ['9','192.65.232.242',43.6555,-79.3626],
+    ['8','2607:fea8:a7a0:618:ccf2:adb9:5180:9764',43.7298,-79.2639],
+    ['7','70.55.34.32',43.8001,-79.4829],
+    ['6','2607:fea8:a7a0:618:d12e:4007:9e31:438a',43.7298,-79.2639],
+    ['6','24.114.72.195',43.606,-79.6708],
+    ['5','2607:fea8:ca0:30:d5af:93b3:a496:f533',43.6431,-79.7709],
+    ['4','70.55.33.158',43.7786,-79.445],
+    ['4','38.121.85.224',43.7059,-79.3464],
+    ['4','74.12.36.80',43.8001,-79.4829],
+    ['3','2607:fea8:a7a0:618:759e:c7d8:fe16:2405',43.7298,-79.2639],
+    ['3','204.83.94.145',52.1404,-106.608],
+    ['3','207.245.240.177',43.7568,-79.521],
+    ['3','2607:fea8:a7a0:618:283d:d1eb:e67c:2b72',43.7298,-79.2639],
+    ['3','2607:fea8:a7a0:618:9cc4:4795:e9e6:b188',43.7298,-79.2639],
+    ['3','96.45.202.55',43.6966,-79.412],
+    ['3','173.244.127.183',43.6555,-79.3626],
+    ['2','24.114.66.133',43.7592,-79.7605],
+    ['2','2607:fea8:ca0:30:43e:b0d2:da13:5689',43.6431,-79.7709],
+    ['2','99.239.185.147',43.8667,-79.0333],
+    ['2','99.227.37.17',43.68,-79.7273],
+    ['2','70.54.121.229',43.7568,-79.521],
+    ['1','70.27.110.130',43.6431,-79.7709],
+    ['1','2607:fea8:ca0:30:e066:2fea:e2eb:78a8',43.6431,-79.7709],
+    ['1','24.114.59.144',43.6667,-79.4167],
+    ['1','2607:fea8:2360:7c3:d945:3837:3938:cce7',43.739,-79.4692],
+    ['1','38.116.192.247',43.7124,-79.3644],
+    ['1','172.98.153.32',43.7673,-79.4111],
+    ['1','2607:fea8:ca0:30:9cdd:9da5:40b3:34bd',43.6431,-79.7709],
+    ['1','24.114.69.117',43.6966,-79.412],
+    ['1','38.116.192.243',43.7124,-79.3644]
+  ];
+
+  var bounds = new google.maps.LatLngBounds();
+  var mapOptions = {
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  
+  for( i = 0; i < markers.length; i++ ) {
+    var position = new google.maps.LatLng(markers[i][2], markers[i][3]);
+    bounds.extend(position);
+    var image = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + (i + 1) + '|FF0000|000000';
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      title: markers[i][0] + '\n' + markers[i][1],
+      icon: image
+    });
+  }
+
+  if (markers.length > 1) {
+    map.fitBounds(bounds);
+  }
+  else {
+    map.setCenter(new google.maps.LatLng(markers[0][1],markers[0][2]));
+    map.setZoom(7);
+  
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <table>
+      <td id="map-canvas"></td>
+     <td><b><ol start="0"><li><p>76.66.164.172<br>Qty: 666<br>Lat: 43.7<br>Lon: -79.7</p></li><li><p>70.55.34.226<br>Qty: 21<br>Lat: 43.8001<br>Lon: -79.4829</p></li><li><p>70.54.122.220<br>Qty: 15<br>Lat: 43.7786<br>Lon: -79.445</p></li><li><p>192.65.232.242<br>Qty: 9<br>Lat: 43.6555<br>Lon: -79.3626</p></li><li><p>2607:fea8:a7a0:618:ccf2:adb9:5180:9764<br>Qty: 8<br>Lat: 43.7298<br>Lon: -79.2639</p></li><li><p>70.55.34.32<br>Qty: 7<br>Lat: 43.8001<br>Lon: -79.4829</p></li><li><p>2607:fea8:a7a0:618:d12e:4007:9e31:438a<br>Qty: 6<br>Lat: 43.7298<br>Lon: -79.2639</p></li><li><p>24.114.72.195<br>Qty: 6<br>Lat: 43.606<br>Lon: -79.6708</p></li><li><p>2607:fea8:ca0:30:d5af:93b3:a496:f533<br>Qty: 5<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>70.55.33.158<br>Qty: 4<br>Lat: 43.7786<br>Lon: -79.445</p></li><li><p>38.121.85.224<br>Qty: 4<br>Lat: 43.7059<br>Lon: -79.3464</p></li><li><p>74.12.36.80<br>Qty: 4<br>Lat: 43.8001<br>Lon: -79.4829</p></li><li><p>2607:fea8:a7a0:618:759e:c7d8:fe16:2405<br>Qty: 3<br>Lat: 43.7298<br>Lon: -79.2639</p></li><li><p>204.83.94.145<br>Qty: 3<br>Lat: 52.1404<br>Lon: -106.608</p></li><li><p>207.245.240.177<br>Qty: 3<br>Lat: 43.7568<br>Lon: -79.521</p></li><li><p>2607:fea8:a7a0:618:283d:d1eb:e67c:2b72<br>Qty: 3<br>Lat: 43.7298<br>Lon: -79.2639</p></li><li><p>2607:fea8:a7a0:618:9cc4:4795:e9e6:b188<br>Qty: 3<br>Lat: 43.7298<br>Lon: -79.2639</p></li><li><p>96.45.202.55<br>Qty: 3<br>Lat: 43.6966<br>Lon: -79.412</p></li><li><p>173.244.127.183<br>Qty: 3<br>Lat: 43.6555<br>Lon: -79.3626</p></li><li><p>24.114.66.133<br>Qty: 2<br>Lat: 43.7592<br>Lon: -79.7605</p></li><li><p>2607:fea8:ca0:30:43e:b0d2:da13:5689<br>Qty: 2<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>99.239.185.147<br>Qty: 2<br>Lat: 43.8667<br>Lon: -79.0333</p></li><li><p>99.227.37.17<br>Qty: 2<br>Lat: 43.68<br>Lon: -79.7273</p></li><li><p>70.54.121.229<br>Qty: 2<br>Lat: 43.7568<br>Lon: -79.521</p></li><li><p>70.27.110.130<br>Qty: 1<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>2607:fea8:ca0:30:e066:2fea:e2eb:78a8<br>Qty: 1<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>24.114.59.144<br>Qty: 1<br>Lat: 43.6667<br>Lon: -79.4167</p></li><li><p>2607:fea8:2360:7c3:d945:3837:3938:cce7<br>Qty: 1<br>Lat: 43.739<br>Lon: -79.4692</p></li><li><p>38.116.192.247<br>Qty: 1<br>Lat: 43.7124<br>Lon: -79.3644</p></li><li><p>172.98.153.32<br>Qty: 1<br>Lat: 43.7673<br>Lon: -79.4111</p></li><li><p>2607:fea8:ca0:30:9cdd:9da5:40b3:34bd<br>Qty: 1<br>Lat: 43.6431<br>Lon: -79.7709</p></li><li><p>24.114.69.117<br>Qty: 1<br>Lat: 43.6966<br>Lon: -79.412</p></li><li><p>38.116.192.243<br>Qty: 1<br>Lat: 43.7124<br>Lon: -79.3644</p></li></ol></b></td>
+    </table>
+    </body>
+</html>
